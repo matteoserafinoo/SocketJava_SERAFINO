@@ -5,7 +5,10 @@
  */
 package gestionesocket_serafino;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.IOException;
+import java.io.OutputStreamWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.logging.Level;
@@ -20,7 +23,7 @@ public class Server {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         Socket socket = null;
         try {
             // TODO code application logic here
@@ -47,7 +50,16 @@ public class Server {
             Logger.getLogger(Server.class.getName()).log(Level.SEVERE, null, ex);
         }
         }
+        /////////////////////////////////////////////////////////////////////////777
+        try {
+            BufferedWriter bufferedw = new BufferedWriter (new OutputStreamWriter(socket.getOutputStream()));
+        } catch (IOException ex) {
+            Logger.getLogger(Server.class.getName()).log(Level.SEVERE, null, ex);
+        }
         
+        
+        BufferedReader bufferedr = new BufferedReader (new OutputStreamReader(socket.getInputStream()));
+
         
         
         
