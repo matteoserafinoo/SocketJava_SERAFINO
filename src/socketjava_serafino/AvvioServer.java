@@ -9,15 +9,13 @@ package socketjava_serafino;
  *
  * @author Studente
  */
-public class Thread extends Thread{
-    
-    public void run()
-    {
-        int t=0;
-        int c=0;
-        for(c=10;c>1;c--)
-        {
-            
-        }
+public class AvvioServer {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
     }
+    
 }

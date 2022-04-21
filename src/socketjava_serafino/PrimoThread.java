@@ -9,13 +9,21 @@ package socketjava_serafino;
  *
  * @author Studente
  */
-public class Avvio {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
+public class PrimoThread extends Thread{
     
+    public void run()
+    {
+        int t=0;
+        int c=0;
+        for(c=10;c>1;c--)
+        {
+            
+            }
 }
+}
+
+      
+    
+
+
+
