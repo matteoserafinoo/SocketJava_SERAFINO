@@ -9,7 +9,7 @@ package socketjava_serafino;
  *
  * @author Studente
  */
-public class SocketJava_SERAFINO {
+public class Server {
 
     /**
      * @param args the command line arguments
