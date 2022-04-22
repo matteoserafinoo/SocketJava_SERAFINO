@@ -5,18 +5,31 @@
  */
 package socketjava_serafino;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author Studente
  */
 public class PrimoThread extends Thread{
+    private int tempo;
+    public PrimoThread(int t) {
+        this.tempo= t;
+    }
     
+    @Override
     public void run()
     {
-        int time=0;
-        int c=0;
-        for(c=10;c>1;c--)
+        for(int i=tempo;i>0;i--)
         {
+            try {
+                System.out.println("Secondi rimasti: "+i);
+                sleep(1000);
+                
+            } catch (InterruptedException ex) {
+                Logger.getLogger(PrimoThread.class.getName()).log(Level.SEVERE, null, ex);
+            }
             
             }
 }

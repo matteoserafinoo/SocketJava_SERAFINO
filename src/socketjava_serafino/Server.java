@@ -28,6 +28,8 @@ public class Server {
             try {
                 ss = new ServerSocket(porta);
                 System.out.println("Server avviato");
+                ss.setSoTimeout(3000);
+                
             } catch (IOException ex) {
                 Logger.getLogger(Server.class.getName()).log(Level.SEVERE, null, ex);
             }
