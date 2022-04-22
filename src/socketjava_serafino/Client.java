@@ -10,10 +10,8 @@ package socketjava_serafino;
  * @author Studente
  */
 public class Client {
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+
+    public Client(String ip, int porta) {
     }
+
 }

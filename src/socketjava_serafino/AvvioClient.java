@@ -16,6 +16,7 @@ public class AvvioClient {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Client cli = new Client("localhost",2000);
     }
     
 }

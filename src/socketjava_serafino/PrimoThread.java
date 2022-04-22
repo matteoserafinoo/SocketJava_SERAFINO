@@ -13,7 +13,7 @@ public class PrimoThread extends Thread{
     
     public void run()
     {
-        int t=0;
+        int time=0;
         int c=0;
         for(c=10;c>1;c--)
         {
